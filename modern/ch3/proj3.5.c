@@ -18,27 +18,13 @@ void main() {
     int rows[4] = {0,0,0,0};
     int cols[4] = {0,0,0,0};
     int diag[2] = {0,0};
+    int i, j;
 
     printf("Enter the numbers from 1 to 16 in any order:\n");
-    scanf("%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d",
-            &values[0],
-            &values[1],
-            &values[2],
-            &values[3],
-            &values[4],
-            &values[5],
-            &values[6],
-            &values[7],
-            &values[8],
-            &values[9],
-            &values[10],
-            &values[11],
-            &values[12],
-            &values[13],
-            &values[14],
-            &values[15]);
+    for(i = 0; i < 16; i++) {
+        scanf("%d", &values[i]);
+    }
 
-    int i, j;
     for(i = 0; i < 4; i++) {
         for(j = 0; j < 4; j++) {
             int value = values[4*i + j];
